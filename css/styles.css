@@ -22,6 +22,10 @@
     letter-spacing: 1px;
     font-size: 22px;
 }
+.card-img-top:hover{
+ filter: contrast(2);
+ transition: all ease 1s;
+}
 
 @keyframes jump { 0% { top: 0; } 50% { top: 50px; } 100% { top: 0; } }
 
@@ -51,6 +55,10 @@
     margin-left: auto;
     margin-right: auto;
     border: 1px solid darkgray;
+}
+.featured img{
+    width: 500px; 
+    height: 500px;
 }
 #featuredcontainer{
     box-shadow: 0px 0px 50px 0px;
@@ -122,6 +130,13 @@
 	
 	
 	table#cart tfoot td{display:block; }
-	table#cart tfoot td .btn{display:block;}
+    table#cart tfoot td .btn{display:block;}
+    
+    .mediacarro  div:nth-child(n+2) {
+        display: none;
+    }
+    .featured div:nth-last-child(1) img{
+        height: 300px;
+    }
 	
 }
